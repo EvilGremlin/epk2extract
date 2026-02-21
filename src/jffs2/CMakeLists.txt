@@ -4,4 +4,8 @@ target_include_directories(jffs2 PUBLIC
 	${LZO_INCLUDE_DIR}
 	${INC}/jffs2
 )
+ set_target_properties(jffs2 PROPERTIES
+    CXX_STANDARD 14
+)
+
 target_link_libraries(jffs2 util mfile lzma ${LZO_LIBRARIES})

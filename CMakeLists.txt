@@ -10,8 +10,6 @@ endif()
 set(CMAKE_CXX_FLAGS_TEST "-Ofast")
 set(CMAKE_C_FLAGS_TEST "-Ofast -funroll-loops -fprefetch-loop-arrays -march=native")
 
-set(CMAKE_C_STANDARD 99)
-set(CMAKE_CXX_STANDARD 11)
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake-modules/")
 find_package(OpenSSL REQUIRED)

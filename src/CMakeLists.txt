@@ -35,10 +35,15 @@ add_executable(epk2extract
 	realtek.c
 )
 
+set_target_properties(epk2extract PROPERTIES
+    CXX_STANDARD 14
+    C_STANDARD 90
+)
+
 target_compile_definitions(epk2extract PRIVATE
 	-DUSE_MMAP #for gzip
 )
-
+	
 target_compile_options(epk2extract PRIVATE
 	-Wunused
 )
